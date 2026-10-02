@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <div class="logo">
+            <span>CF</span>
+            <div>
+                <strong>Conecta Futuro</strong>
+                <small>Oportunidades sin fronteras</small>
+            </div>
+        </div>
+
+        <nav>
+            <button onclick="mostrarSeccion('inicio')">Inicio</button>
+            <button onclick="mostrarSeccion('vocacional')">Orientación</button>
+            <button onclick="mostrarSeccion('universidades')">Universidades</button>
+            <button onclick="mostrarSeccion('becas')">Becas</button>
+            <button onclick="mostrarSeccion('virtual')">Virtual</button>
+        </nav>
+    </header>
+
+
+    <!-- INICIO -->
+    <main id="inicio" class="seccion activa">
+
+        <section class="hero">
+            <div class="hero-text">
+                <span class="etiqueta">TU FUTURO COMIENZA AQUÍ</span>
+
+                <h1>
+                    Descubre las oportunidades
+                    <span>que existen para ti.</span>
+                </h1>
+
+                <p>
+                    Encuentra carreras, universidades, becas y oportunidades
+                    educativas en Perú y el mundo desde un solo lugar.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn-principal" onclick="mostrarSeccion('vocacional')">
+                        Descubrir mi camino
+                    </button>
+
+                    <button class="btn-secundario" onclick="mostrarSeccion('oportunidades')">
+                        Explorar oportunidades
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="globo">🌎</div>
+                <h3>Tu ubicación no limita tu futuro</h3>
+                <p>
+                    Conoce oportunidades educativas de Moquegua,
+                    otras ciudades del Perú y el extranjero.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ESTADÍSTICAS -->
+        <section class="estadisticas">
+
+            <div>
+                <strong>+20</strong>
+                <span>Oportunidades</span>
+            </div>
+
+            <div>
+                <strong>+10</strong>
+                <span>Universidades</span>
+            </div>
+
+            <div>
+                <strong>+8</strong>
+                <span>Becas</span>
+            </div>
+
+            <div>
+                <strong>+5</strong>
+                <span>Opciones virtuales</span>
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORÍAS -->
+        <section class="contenido">
+
+            <div class="titulo-seccion">
+                <span>EXPLORA</span>
+                <h2>Encuentra lo que necesitas</h2>
+            </div>
+
+            <div class="categorias">
+
+                <article onclick="mostrarSeccion('vocacional')">
+                    <div class="icono">🧭</div>
+                    <h3>Orientación vocacional</h3>
+                    <p>Explora carreras según tus intereses.</p>
+                </article>
+
+                <article onclick="mostrarSeccion('universidades')">
+                    <div class="icono">🎓</div>
+                    <h3>Universidades</h3>
+                    <p>Conoce instituciones y carreras.</p>
+                </article>
+
+                <article onclick="mostrarSeccion('becas')">
+                    <div class="icono">💰</div>
+                    <h3>Becas</h3>
+                    <p>Encuentra opciones de financiamiento.</p>
+                </article>
+
+                <article onclick="mostrarSeccion('virtual')">
+                    <div class="icono">💻</div>
+                    <h3>Estudio virtual</h3>
+                    <p>Estudia sin necesidad de trasladarte.</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- IDEA DEL PROYECTO -->
+        <section class="mensaje">
+
+            <div>
+                <span>EL PROPÓSITO</span>
+                <h2>Las oportunidades pueden estar lejos. La información no.</h2>
+            </div>
+
+            <p>
+                Conecta Futuro busca reducir las barreras de información
+                que enfrentan los estudiantes al buscar oportunidades
+                educativas fuera de su localidad.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ORIENTACIÓN VOCACIONAL -->
+    <main id="vocacional" class="seccion">
+
+        <section class="contenido pagina">
+
+            <div class="titulo-seccion">
+                <span>ORIENTACIÓN</span>
+                <h2>Descubre áreas que podrían interesarte</h2>
+                <p>Responde estas preguntas y obtén una orientación inicial.</p>
+            </div>
+
+            <div class="test">
+
+                <div class="pregunta">
+                    <h3>1. ¿Qué actividad te interesa más?</h3>
+
+                    <label>
+                        <input type="radio" name="p1" value="tecnologia">
+                        Crear tecnología y resolver problemas
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p1" value="salud">
+                        Ayudar y cuidar a otras personas
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p1" value="negocios">
+                        Crear proyectos y negocios
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p1" value="arte">
+                        Crear, diseñar o comunicar
+                    </label>
+                </div>
+
+
+                <div class="pregunta">
+                    <h3>2. ¿Qué actividad realizarías con mayor entusiasmo?</h3>
+
+                    <label>
+                        <input type="radio" name="p2" value="tecnologia">
+                        Programar o construir algo
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p2" value="salud">
+                        Investigar sobre el cuerpo humano
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p2" value="negocios">
+                        Organizar un proyecto
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p2" value="arte">
+                        Diseñar contenido
+                    </label>
+                </div>
+
+
+                <div class="pregunta">
+                    <h3>3. ¿Qué habilidad te gustaría desarrollar?</h3>
+
+                    <label>
+                        <input type="radio" name="p3" value="tecnologia">
+                        Pensamiento lógico
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p3" value="salud">
+                        Comunicación y empatía
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p3" value="negocios">
+                        Liderazgo
+                    </label>
+
+                    <label>
+                        <input type="radio" name="p3" value="arte">
+                        Creatividad
+                    </label>
+                </div>
+
+                <button class="btn-principal" onclick="calcularVocacion()">
+                    Ver orientación
+                </button>
+
+                <div id="resultadoVocacional"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- UNIVERSIDADES -->
+    <main id="universidades" class="seccion">
+
+        <section class="contenido pagina">
+
+            <div class="titulo-seccion">
+                <span>EDUCACIÓN SUPERIOR</span>
+                <h2>Universidades y carreras</h2>
+                <p>Explora algunas opciones educativas.</p>
+            </div>
+
+            <input
+                type="text"
+                id="buscadorUniversidades"
+                class="buscador"
+                placeholder="🔎 Buscar universidad o carrera..."
+                onkeyup="buscarUniversidades()"
+            >
+
+            <div class="tarjetas" id="listaUniversidades">
+
+                <article class="tarjeta universidad">
+                    <span class="tipo">PÚBLICA</span>
+                    <h3>Universidad Nacional de Moquegua</h3>
+                    <p>📍 Moquegua</p>
+                    <p>Ingeniería, gestión y otras áreas.</p>
+                    <button>Ver oportunidad</button>
+                </article>
+
+                <article class="tarjeta universidad">
+                    <span class="tipo">PÚBLICA</span>
+                    <h3>Universidad Nacional de San Agustín</h3>
+                    <p>📍 Arequipa</p>
+                    <p>Diversas carreras profesionales.</p>
+                    <button>Ver oportunidad</button>
+                </article>
+
+                <article class="tarjeta universidad">
+                    <span class="tipo">PÚBLICA</span>
+                    <h3>Universidad Nacional Mayor de San Marcos</h3>
+                    <p>📍 Lima</p>
+                    <p>Amplia oferta académica.</p>
+                    <button>Ver oportunidad</button>
+                </article>
+
+                <article class="tarjeta universidad">
+                    <span class="tipo virtual">VIRTUAL</span>
+                    <h3>Universidad virtual</h3>
+                    <p>🌎 Modalidad a distancia</p>
+                    <p>Programas que pueden estudiarse virtualmente.</p>
+                    <button>Ver oportunidad</button>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- BECAS -->
+    <main id="becas" class="seccion">
+
+        <section class="contenido pagina">
+
+            <div class="titulo-seccion">
+                <span>FINANCIAMIENTO</span>
+                <h2>Becas y oportunidades</h2>
+                <p>Conoce algunas alternativas para financiar tus estudios.</p>
+            </div>
+
+            <div class="tarjetas">
+
+                <article class="tarjeta beca">
+                    <div class="icono">🎓</div>
+                    <h3>Beca 18</h3>
+                    <p>
+                        Programa dirigido a estudiantes con buen rendimiento
+                        académico y determinadas condiciones de elegibilidad.
+                    </p>
+                    <button onclick="mostrarInfo('Beca 18')">
+                        Más información
+                    </button>
+                </article>
+
+                <article class="tarjeta beca">
+                    <div class="icono">📚</div>
+                    <h3>Beca Permanencia</h3>
+                    <p>
+                        Alternativa de apoyo para estudiantes que cumplen
+                        los requisitos establecidos por el programa.
+                    </p>
+                    <button onclick="mostrarInfo('Beca Permanencia')">
+                        Más información
+                    </button>
+                </article>
+
+                <article class="tarjeta beca">
+                    <div class="icono">🌎</div>
+                    <h3>Becas internacionales</h3>
+                    <p>
+                        Explora oportunidades de estudio ofrecidas por
+                        instituciones y programas internacionales.
+                    </p>
+                    <button onclick="mostrarInfo('Becas internacionales')">
+                        Explorar
+                    </button>
+                </article>
+
+            </div>
+
+            <div class="aviso">
+                ⚠️ <strong>Importante:</strong>
+                Los requisitos y fechas de las becas pueden cambiar.
+                Siempre verifica la información en la página oficial
+                de la institución correspondiente.
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- VIRTUAL -->
+    <main id="virtual" class="seccion">
+
+        <section class="contenido pagina">
+
+            <div class="titulo-seccion">
+                <span>EDUCACIÓN SIN FRONTERAS</span>
+                <h2>Estudia desde donde estés</h2>
+                <p>
+                    Las modalidades virtuales pueden reducir algunas
+                    barreras geográficas.
+                </p>
+            </div>
+
+            <div class="virtual-banner">
+
+                <div>
+                    <h2>¿Y si no necesitas mudarte?</h2>
+
+                    <p>
+                        Existen programas educativos que pueden desarrollarse
+                        de manera virtual o a distancia.
+                    </p>
+                </div>
+
+                <div class="numero">01</div>
+
+            </div>
+
+
+            <div class="tarjetas">
+
+                <article class="tarjeta">
+                    <span class="tipo virtual">VIRTUAL</span>
+                    <h3>Programas nacionales</h3>
+                    <p>
+                        Busca carreras y programas ofrecidos mediante
+                        modalidades virtuales o a distancia.
+                    </p>
+                    <button>Explorar</button>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tipo virtual">INTERNACIONAL</span>
+                    <h3>Universidades del extranjero</h3>
+                    <p>
+                        Conoce alternativas internacionales que ofrecen
+                        programas en línea.
+                    </p>
+                    <button>Explorar</button>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tipo virtual">REMOTO</span>
+                    <h3>Cursos y certificaciones</h3>
+                    <p>
+                        Desarrolla nuevas habilidades mediante oportunidades
+                        de formación en línea.
+                    </p>
+                    <button>Explorar</button>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- OPORTUNIDADES -->
+    <main id="oportunidades" class="seccion">
+
+        <section class="contenido pagina">
+
+            <div class="titulo-seccion">
+                <span>OPORTUNIDADES</span>
+                <h2>Explora tu futuro</h2>
+            </div>
+
+            <div class="opciones-grandes">
+
+                <div onclick="mostrarSeccion('universidades')">
+                    <span>🎓</span>
+                    <h3>Universidades</h3>
+                    <p>Encuentra opciones en diferentes ciudades.</p>
+                </div>
+
+                <div onclick="mostrarSeccion('becas')">
+                    <span>💰</span>
+                    <h3>Becas</h3>
+                    <p>Busca alternativas de financiamiento.</p>
+                </div>
+
+                <div onclick="mostrarSeccion('virtual')">
+                    <span>💻</span>
+                    <h3>Educación virtual</h3>
+                    <p>Estudia sin necesidad de trasladarte.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE -->
+    <footer>
+
+        <div>
+            <strong>Conecta Futuro</strong>
+            <p>Oportunidades educativas sin fronteras.</p>
+        </div>
+
+        <div>
+            <p>Proyecto educativo sobre centralización y oportunidades.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+
+            <button class="cerrar" onclick="cerrarModal()">×</button>
+
+            <h2 id="modalTitulo"></h2>
+            <p id="modalTexto"></p>
+
+            <button class="btn-principal" onclick="cerrarModal()">
+                Entendido
+            </button>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
